@@ -1,5 +1,7 @@
-import { createAction, props } from "@ngrx/store";
 import { Product } from "../product";
+
+/* NgRx */
+import { createAction, props } from "@ngrx/store";
 
 export const toggleProductCode = createAction(
     '[Product] Toggle Product Code'
@@ -45,4 +47,9 @@ export const updateProductSuccess = createAction(
 export const updateProductFailure = createAction(
     '[Product] Update Product Fail',
     props<{ error: string }>()
+);
+
+export const createProduct = createAction(
+    '[Product] Create Product',
+    props<{ product: Product }>()
 );
