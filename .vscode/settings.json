@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "files.autoSave": "off",
-    "html.format.wrapAttributes": "force-aligned"
+    "html.format.wrapAttributes": "force-aligned",
+    "git.ignoreLimitWarning": true
 }
